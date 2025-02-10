@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwcxahdl6b2by"]
+
+[ext_resource type="PackedScene" uid="uid://da3a3re24v5lc" path="res://scenes/wall.tscn" id="1_xrv2b"]
+[ext_resource type="PackedScene" uid="uid://b2yjxsnccf4nw" path="res://scenes/ball.tscn" id="2_1mdhf"]
+
+[node name="Main" type="Node2D"]
+
+[node name="wall" parent="." instance=ExtResource("1_xrv2b")]
+position = Vector2(-44, 175)
+scale = Vector2(-0.686625, 5.70207)
+
+[node name="wall2" parent="." instance=ExtResource("1_xrv2b")]
+position = Vector2(230, -44)
+rotation = 1.5708
+scale = Vector2(-0.687218, 5.68767)
+
+[node name="wall3" parent="." instance=ExtResource("1_xrv2b")]
+position = Vector2(524, 157)
+scale = Vector2(-0.686625, 5.70207)
+
+[node name="wall4" parent="." instance=ExtResource("1_xrv2b")]
+position = Vector2(227, 364)
+rotation = 1.5708
+scale = Vector2(-0.687218, 5.68767)
+
+[node name="Ball" parent="." instance=ExtResource("2_1mdhf")]
+position = Vector2(240, 160)
