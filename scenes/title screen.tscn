@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://dlw7gs5sqq3so"]
+[gd_scene load_steps=4 format=3 uid="uid://dlw7gs5sqq3so"]
+
+[ext_resource type="Texture2D" uid="uid://b2khj1pvi4ls6" path="res://assets/title.png" id="1_w7a5q"]
+[ext_resource type="Script" path="res://scripts/square.gd" id="2_mdolr"]
+[ext_resource type="Script" path="res://scripts/circle.gd" id="3_wwmu1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,3 +11,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(240, 40)
+texture = ExtResource("1_w7a5q")
+
+[node name="square" type="Button" parent="."]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 100.0
+offset_right = 273.0
+offset_bottom = 131.0
+text = "Square"
+script = ExtResource("2_mdolr")
+
+[node name="circle" type="Button" parent="."]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 140.0
+offset_right = 273.0
+offset_bottom = 171.0
+text = "circle"
+script = ExtResource("3_wwmu1")

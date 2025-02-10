@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwcxahdl6b2by"]
 
 [ext_resource type="PackedScene" uid="uid://da3a3re24v5lc" path="res://scenes/wall.tscn" id="1_xrv2b"]
-[ext_resource type="PackedScene" uid="uid://b2yjxsnccf4nw" path="res://scenes/ball.tscn" id="2_1mdhf"]
+[ext_resource type="PackedScene" uid="uid://be854kr8v1vs1" path="res://scenes/quad.tscn" id="2_1rmvi"]
 
 [node name="Main" type="Node2D"]
 
@@ -23,5 +23,5 @@ position = Vector2(227, 364)
 rotation = 1.5708
 scale = Vector2(-0.687218, 5.68767)
 
-[node name="Ball" parent="." instance=ExtResource("2_1mdhf")]
+[node name="Ball" parent="." instance=ExtResource("2_1rmvi")]
 position = Vector2(240, 160)
