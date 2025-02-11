@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://oqhqvj7kgqjn"]
+[gd_scene load_steps=4 format=3 uid="uid://oqhqvj7kgqjn"]
 
 [ext_resource type="PackedScene" uid="uid://da3a3re24v5lc" path="res://scenes/wall.tscn" id="1_1qipm"]
 [ext_resource type="PackedScene" uid="uid://b2yjxsnccf4nw" path="res://scenes/ball.tscn" id="2_1i3mk"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="3_2gfdq"]
 
 [node name="Main" type="Node2D"]
 
@@ -25,3 +26,13 @@ scale = Vector2(-0.687218, 5.68767)
 
 [node name="Ball" parent="." instance=ExtResource("2_1i3mk")]
 position = Vector2(240, 160)
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_type_variation = &"FlatButton"
+text = "main menu"
+flat = true
+script = ExtResource("3_2gfdq")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
