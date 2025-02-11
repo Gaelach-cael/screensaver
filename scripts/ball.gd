@@ -13,3 +13,6 @@ func _physics_process(delta: float):
 		var normal = collision.get_normal()
 
 		velocity = velocity.bounce(normal)
+
+		#plays audio
+		$AudioStreamPlayer.play()
