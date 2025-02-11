@@ -31,5 +31,5 @@ offset_left = 210.0
 offset_top = 140.0
 offset_right = 273.0
 offset_bottom = 171.0
-text = "circle"
+text = "Circle"
 script = ExtResource("3_wwmu1")
