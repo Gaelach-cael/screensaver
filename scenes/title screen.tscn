@@ -31,3 +31,6 @@ offset_top = 140.0
 offset_right = 273.0
 offset_bottom = 171.0
 text = "Circle"
+
+[connection signal="pressed" from="square" to="." method="_on_square_pressed"]
+[connection signal="pressed" from="circle" to="." method="_on_circle_pressed"]
